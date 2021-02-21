@@ -37,5 +37,5 @@ Features the following REST endpoints:
 
 ### Development
 Mongodb should be installed at machine with 27017 port enabled
-- Run `npm start` in `frontend/`, server will run at `http://localhost:3000`
-- Run `npm start` in `backend/`, server will run at `http://localhost:8000`
+- Run `npm start` in master branch, server will run at `http://localhost:3000`
+- Run `npm start` in react branch, server will run at `http://localhost:8000`
