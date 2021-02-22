@@ -12,10 +12,10 @@ var app = express();
 
 const port = process.env.PORT || 3000;
 const dbPort = process.env.DB_PORT || 27017;
-const dbUrl = process.env.MONGO_NAME || "localhost";
-const dbCollection = process.env.DB_COLLECTION || "devNew";
-
-mongoose.connect(`mongodb://${dbUrl}/${dbCollection}`, {useNewUrlParser: true})
+const dbUrl = process.env.MONGO_NAME || "asimiec1:Waseem12@cluster0.tzikk.mongodb.net";
+const dbCollection = process.env.DB_COLLECTION || "reactNode";
+//mongoose.connect(`mongodb://${dbUrl}/${dbCollection}`, {useNewUrlParser: true})
+mongoose.connect(`mongodb+srv://${dbUrl}/${dbCollection}`, {useNewUrlParser: true})
     .then(_ => console.log('MongoDB connection success'))
 .catch(err => console.error(err));
 mongoose.set('useCreateIndex', true);
